@@ -1,1 +1,238 @@
 /* You can add global styles to this file, and also import other style files */
+body, h1, h2, h3, h4, h5, h6, li, p, span {
+    font-family: 'Rubik', sans-serif !important;
+}
+ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+li {
+    list-style: none !important;
+}
+a {
+    text-decoration: none !important;
+}
+.navbar-expand-lg{
+    .navbar-collapse{
+        justify-content: end;
+    }
+}
+.title, .aboutcontent{
+    text-align: center;
+    h2 {
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 57px;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #A9A9A9;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 50%;
+            height: 7px;
+            background: #A9A9A9;
+        }
+    }
+}
+.aboutcontent {
+    text-align: left;
+}
+@media only screen and (max-width: 1280px) {
+    #banner{
+        .bannercontent{
+            h1{
+                font-size: 44px !important;
+                line-height: 50px !important;
+            }       
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .navbar-collapse{
+        background: #dcb8ff;
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #banner{
+        min-height: 500px !important;
+        margin-bottom:40px !important; 
+        .leftimage{
+            display: none;
+        }
+        .rightimage{
+            display: none;
+        }
+        &::before, &::after{
+            content: inherit !important;
+        }
+        .bannercontent{
+            min-height: 500px !important;
+        }
+    }
+    .aboutimg{
+        margin-bottom: 40px;
+    }
+    .aboutchild{
+        .item {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #dcb8ff38;
+        }
+    }
+    .title{
+        h2{
+            font-size: 34px !important; 
+            line-height: 40px !important;
+            margin-bottom: 20px !important;
+        }
+    }
+    section#About{
+        .aboutcontent {
+            h2{
+                font-size: 34px !important;
+                line-height: 40px !important;
+            }
+        }
+    }
+    #Services{
+        .item{
+            text-align: center;
+            padding-bottom: 20px !important;
+            .serviceimage {
+                margin-bottom: 60px !important;
+                img{
+                    max-width: 360px !important;
+                    margin: 0 auto;
+                }
+            }
+            &.right{
+                h3{
+                    font-size: 28px !important;
+                    line-height: 40px !important;
+                }
+                &.second{
+                    &::after{
+                        content: inherit !important;
+                    }
+                }
+                &.fourth{
+                    &::after{
+                        content: inherit !important;
+                    }
+                }
+                .servicecontent{
+                    height: auto !important;
+                    align-items: center !important;
+                    justify-content: unset !important;
+                    display: block !important;
+                    flex-direction: unset !important;
+                    text-align: center !important;
+                    p{
+                        text-align: center !important;
+                    }
+                }
+            }
+            &.left{
+                .servicecontent{
+                    height: auto !important;
+                    align-items: center !important;
+                    justify-content: unset !important;
+                    display: block !important;
+                    flex-direction: unset !important;
+                    text-align: center !important;
+                    p{
+                        text-align: center !important;
+                    }
+                }
+                h3{
+                    font-size: 28px !important;
+                    line-height: 40px !important;
+                }
+                &.first{
+                    &::after{
+                        content:inherit !important;
+                    }
+                    .col {
+                        &:first-child{
+                            order: 2;
+                        }
+                        &:last-child{
+                            order: 1;
+                        }
+                    }
+                }
+                &.third{
+                    .col {
+                        &:first-child{
+                            order: 2;
+                        }
+                        &:last-child{
+                            order: 1;
+                        }
+                    }
+                    &::after{
+                        content:inherit !important;
+                    }
+                }
+                
+            }
+        }
+    } 
+    .col{
+        flex: inherit !important;
+    }
+    #Team{
+        padding-bottom: 50px !important;
+        padding-top: 50px !important;
+        &::after{
+            content: inherit !important;
+        }
+    }
+    #ourprojects{
+        .thubnilimg{
+            margin-bottom: 30px;
+        }
+        padding-top: 50px !important;
+        padding-bottom:  50px !important;
+    }
+    #Contact{
+        .item {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media only screen and (max-width: 575px) {
+    #banner {
+        min-height: 400px !important;
+        margin-bottom: 20px !important;
+    }
+    #banner .bannercontent {
+        min-height: 400px !important;
+    }
+    #header{
+        .navbar-brand{
+            img{
+                width: 100%;
+                height: auto;
+                max-width: 190px;
+            }
+        }
+    }
+    #banner{
+        .bannercontent{
+            h1{
+                font-size: 32px !important;
+                line-height: 40px !important;
+            }       
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<header id="header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="#"><img src="../../../assets/images/logo/logo-1 1.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleCollapsed()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
+        <div class="navbar-nav">
+          <a (click)="toAbout()" class="nav-link" routerLinkActive="active">About Us</a>
+          <a (click)="toServices()" class="nav-link" routerLinkActive="active">Services</a>
+          <a (click)="toTeam()" class="nav-link" routerLinkActive="active">Team</a>
+          <a (click)="toClients()" class="nav-link" routerLinkActive="active">Clients</a>
+          <a (click)="toContact()" class="nav-link" routerLinkActive="active">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

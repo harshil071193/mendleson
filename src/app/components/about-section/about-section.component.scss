@@ -1,0 +1,48 @@
+section{
+    &#About{
+        padding-bottom: 100px;
+        .aboutcontent{
+            h2{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 57px;
+                color: #000000;
+                margin-bottom: 20px !important;
+            }
+            p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 27px;
+                color: #2C2C2C;
+                margin-bottom: 40px;
+            }
+        }
+        .aboutchild{
+            .item{
+                .icon{
+                    margin-bottom: 25px;
+                }
+                .iteminfo{
+                    h3{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 28px;
+                        text-transform: uppercase;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+        .aboutimg{
+            img{
+                width: 100%;
+                height: auto;
+                margin-right: auto;
+                max-width: 612px;
+            }
+        }
+    }
+}

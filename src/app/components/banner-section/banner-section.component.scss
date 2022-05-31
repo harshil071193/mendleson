@@ -1,0 +1,63 @@
+#banner {
+        min-height: 900px;
+        height: 100%;
+        display: block;
+        position: relative;
+        margin-bottom: 80px;
+        .leftimage {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .rightimage {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../../../assets/images/banner/banner-top-left.png);
+            width: 119px;
+            height: 300px;
+            z-index: 111;
+            background-repeat: no-repeat;
+
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(../../../assets/images/banner/banner-top-right.png);
+            width: 266px;
+            height: 250px;
+            z-index: 111;
+            background-repeat: no-repeat;            
+        }
+        .bannercontent{
+            justify-content: center;
+            min-height: 900px;
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            h1 {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 56px;
+                line-height: 66px;
+                color: #000000;
+            }
+            .bannercontentrow{
+                max-width: 500px;
+                margin-left: auto;
+            }
+        }
+    }
