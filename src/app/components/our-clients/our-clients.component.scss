@@ -10,6 +10,7 @@
         img{
             width: 100%;
             height: auto;
+            max-width: 150px;
         }
         .item {
             width: 18%;
@@ -20,12 +21,5 @@
             align-items: center;
             margin-bottom: 80px;
         }
-    }
-}
-.partnerlogosrow2{
-    .item {
-        width: 23% !important;
-        flex: 0 0 23% !important;
-        margin-bottom: 0px !important;
     }
 }
